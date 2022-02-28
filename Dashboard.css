@@ -403,22 +403,42 @@ body{
 
 
 /*section6*/
-#section6{
-	display: grid;
-	grid-template-columns: auto auto auto;
-	grid-gap: 15px;
-	padding:20px 10px;
-	background:black;
-	overflow-x: auto;
+@media(min-width: 666px){
+	#section6{
+		display: grid;
+		grid-template-columns: auto auto auto;
+		grid-gap: 15px;
+		padding:20px 10px;
+		background:black;
+		overflow-x: auto;
+	}
+
+	#section6 .box-div{
+		padding:10px 0px;
+		padding-top: 15px;
+		background:lightblue;
+		text-align: center;
+	}
 }
 
-#section6 .box-div{
-	padding:10px 0px;
-	padding-top: 15px;
-	background:lightblue;
-	text-align: center;
-}
+@media(max-width: 665px){
+	#section6{
+		/*display: grid;
+		grid-template-columns: auto auto auto;
+		grid-gap: 15px;*/
+		padding:20px 10px;
+		background:black;
+		overflow-x: auto;
+	}
 
+	#section6 .box-div{
+		padding:10px 0px;
+		padding-top: 15px;
+		background:lightblue;
+		text-align: center;
+		margin-bottom:10px;
+	}
+}
 
 /*font-awesome*/
 #section6 a{
@@ -572,11 +592,15 @@ body{
 /*section8*/
 #section8{
 	background: white;
+}
+
+#section8 .section8-innner-div{
 	display:grid;
 	grid-template-columns:auto auto auto auto auto;
 	padding: 5px 0px;
 	justify-content: center;
 	overflow-x:auto;
+	margin:auto;
 }
 
 #section8 .img-div{
@@ -586,7 +610,7 @@ body{
 /*media quary*/
 @media(max-width:770px){
 	#section8 .img-div{
-		width:85px;
+		width:70px;
 	}
 }
 
